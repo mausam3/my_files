@@ -1,9 +1,10 @@
 name: First-Workflow
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: get code
-      uses: checkout/actions@v3
-    - name: execute sum
-      run: python3 test.py
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: checkout/actions@v3
+      - name: execute sum
+        run: python3 test.py
