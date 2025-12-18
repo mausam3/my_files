@@ -1,0 +1,9 @@
+name: First-Workflow
+on: push
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: get code
+      uses: checkout/actions@v3
+    - name: install calculater
+      run: python3 calculator.py
