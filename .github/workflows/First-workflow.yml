@@ -5,5 +5,5 @@ jobs:
   steps:
     - name: get code
       uses: checkout/actions@v3
-    - name: install calculater
-      run: python3 calculator.py
+    - name: execute sum
+      run: python3 test.py
